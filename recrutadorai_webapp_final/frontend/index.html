@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>RecrutadorAI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 RecrutadorAI</h1>
+    <p>Envie currículos e descubra automaticamente a compatibilidade com a vaga desejada!</p>
+
+    <label>Selecione a vaga:</label>
+    <select id="vaga">
+      <option value="">-- Escolha uma vaga --</option>
+      <option value="Design de Produtos">Design de Produtos</option>
+      <option value="Engenheiro Mecatrônico">Engenheiro Mecatrônico</option>
+      <option value="Vendedor Especializado">Vendedor Especializado</option>
+    </select>
+
+    <div class="upload-section">
+      <input type="file" id="files" multiple />
+      <button id="uploadBtn">📤 Enviar Currículos</button>
+    </div>
+
+    <button id="analyzeBtn">🔍 Analisar Compatibilidade</button>
+    <div id="ranking"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
